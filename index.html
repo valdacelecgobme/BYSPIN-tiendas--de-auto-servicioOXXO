@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso de Bloqueo — Spin by OXXO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: #f3f4f6;
+      padding: 20px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #900 0%, #7b2cbf 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitulo {
+      color: #666;
+      font-size: 17px;
+      margin-top: 8px;
+    }
+    .linea {
+      height: 2px;
+      background: linear-gradient(90deg, #900, #7b2cbf);
+      margin-bottom: 25px;
+    }
+    .caja-mensaje {
+      background-color: #f9f0fc;
+      border: 1px solid #7b2cbf;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .caja-mensaje h2 {
+      color: #4a148c;
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+    .caja-mensaje p {
+      color: #333;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .caja-datos {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .caja-datos p {
+      font-size: 17px;
+      line-height: 2;
+      color: #222;
+    }
+    .caja-datos strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="logo">Spin by OXXO</h1>
+    <p class="subtitulo">Aviso Oficial de Estado de Cuenta</p>
+  </div>
+
+  <div class="linea"></div>
+
+  <div class="caja-mensaje">
+    <h2>Estimada Fátima Villanueva Rodríguez:</h2>
+    <p>Se le comunica que su tarjeta ha sido bloqueada el día 09-11-2026 a las 16:19:11, debido a la aceptación e introducción de depósitos foráneos excedentes.</p>
+  </div>
+
+  <div class="caja-datos">
+    <p><strong>Nombre del Titular:</strong> Fátima Villanueva Rodríguez</p>
+    <p><strong>Terminación de tarjeta:</strong> •••• 1430</p>
+    <p><strong>Fecha y hora:</strong> <span id="fecha-actual"></span></p>
+    <p><strong>Fecha y hora del bloqueo:</strong> 09-11-2026 a las 16:19:11</p>
+    <p><strong>Causa del bloqueo:</strong> Bloqueo por introducción y aceptación de depósitos foráneos excedentes</p>
+  </div>
+
+  <script>
+    function actualizarFecha() {
+      const ahora = new Date();
+      const opciones = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+      document.getElementById('fecha-actual').textContent = ahora.toLocaleString('es-MX', opciones);
+    }
+    actualizarFecha();
+  </script>
+
+</body>
+  </html>
+  
